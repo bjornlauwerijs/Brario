@@ -1,0 +1,304 @@
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: light;
+    color:black;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+
+h1{
+    font-size: 54px;
+}
+
+h2 { 
+    font-size: 22px;
+}
+
+h3 { 
+    font-size: 18px;
+}
+
+h4 { 
+    font-size: 16px;
+}
+
+h5 { 
+    font-size: 12px;
+}
+
+h6 { 
+    font-size: 10px;
+}
+
+li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img{
+
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    background: rgb(228,234,242);
+    background: linear-gradient(180deg, rgba(228,234,242,1) 0%, rgba(195,207,226,1) 100%);
+
+    /*    text-align: center;*/
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.emphasis{
+    background-color: #F4C709;
+}
+
+#container{
+}
+
+
+/*Tekst bovenaan van links naar rechts bewegen*/
+#topbar{
+    background-color: #F4C709;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1em;
+    overflow: hidden;
+}
+
+#scroll-text{
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: textScrollAnimation 15s linear infinite;
+    -webkit-animation: textScrollAnimation 15s linear infinite;
+    animation: textScrollAnimation 10s linear infinite;
+}
+
+@keyframes textScrollAnimation {
+    0% {
+        left: 0;
+        transform: translateX(-100%)
+    }
+    100% {
+        left: 100%;
+        transform: translateX(100%)
+    }
+}
+
+/*Het menu bovenaan*/
+#menu{
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+#menu li{
+    color: #F4C709;
+    display: inline;
+    text-decoration: none;
+    padding:  0 100px 0 100px;
+
+}#menu li a:hover{
+    color: black;
+}
+
+#menu li:nth-last-child(1){
+
+}
+
+#menu li:nth-last-child(1) a{
+    color: white;
+    background-color: #E62810;
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px 25px;
+}
+
+#menu li:nth-last-child(1) a:hover{
+    box-shadow: 0px 0px 35px 0px #E62810;
+}
+
+/*De bom van links naar rechts bewegen
+#movingBombContainer{
+overflow: hidden;
+}
+
+#movingBomb{
+background-color: #F4C709;
+position: relative;
+animation: movingBombAnimation;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+width: 100px;
+background: red;
+}
+
+@keyframes movingBombAnimation {
+0% {
+right: 100;
+transform: translateX(100%)
+}
+100% {
+right: 0;
+transform: translateX(0%)
+}
+}
+*/
+
+
+#main{
+    padding-top: 100px;
+    column-count: 3;
+    column-gap: 100px;
+    padding-bottom: 150px;
+}
+
+#cloud1{
+    width: 30%;
+    animation: movement-x 25s infinite;
+    filter: blur(2px);
+}
+
+@keyframes movement-x {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(700px);
+    }
+    70% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+img#logo{
+    z-index: -5;
+    width: 100%;
+    animation: pulse 2s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+
+#cloud2{
+    width: 40%;
+    animation: movement-x 20s infinite;
+    filter: blur(2px);
+}
+
+.clouds{
+    z-index: -5;
+}
+
+.button{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #F4C709; 
+    color: black; 
+    border: none;
+    /*    korte schrijfwijze boven rechts onder links*/
+    padding: 15px 25px 15px 25px;
+    /*
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    */
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px 25px;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 35px 0px #F4C709;
+}
+
+#playbutton{
+
+    margin-bottom: 200px;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+#brarioLand{
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+#theWhyWrapper{
+    background: rgb(68,36,5);
+    background: linear-gradient(0deg, rgba(68,36,5,1) 0%, rgba(154,98,44,1) 70%, rgba(110,190,91,1) 100%);
+    position: relative;
+}
+
+
+#theWhy{
+    width: 70%;
+    margin: auto;
+    position: relative;
+    color: white;
+    padding: 120px 50px 200px 50px;
+}
+
+#theWhy p{
+    color: white;
+        padding-right: 50%
+}
+
+img#dino{
+    width: 15%;
+    position: absolute;
+    right: 20%;
+    bottom: 30%;
+    transform: rotate(-15deg)
+}

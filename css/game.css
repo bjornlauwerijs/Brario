@@ -1,0 +1,156 @@
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+body{
+    background-color:aliceblue;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: light;
+    color:black;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+
+h1{
+    font-size: 54px;
+}
+
+h2 { 
+    font-size: 22px;
+}
+
+h3 { 
+    font-size: 18px;
+}
+
+h4 { 
+    font-size: 16px;
+}
+
+h5 { 
+    font-size: 12px;
+}
+
+h6 { 
+    font-size: 10px;
+}
+
+li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img{
+
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    margin: 0 0 50px 0;
+    /*    text-align: center;*/
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.emphasis{
+    background-color: #F4C709;
+}
+
+#container{
+}
+
+
+/*Tekst bovenaan van links naar rechts bewegen*/
+#topbar{
+    background-color: #F4C709;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1em;
+    overflow: hidden;
+}
+
+#scroll-text{
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: textScrollAnimation 15s linear infinite;
+    -webkit-animation: textScrollAnimation 15s linear infinite;
+    animation: textScrollAnimation 10s linear infinite;
+}
+
+@keyframes textScrollAnimation {
+    0% {
+        left: 0;
+        transform: translateX(-100%)
+    }
+    100% {
+        left: 100%;
+        transform: translateX(100%)
+    }
+}
+
+/*Het menu bovenaan*/
+#menu{
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+#menu li{
+    color: #F4C709;
+    display: inline;
+    text-decoration: none;
+    padding:  0 100px 0 100px;
+
+}#menu li a:hover{
+    color: black;
+}
+
+
+
+
+/*Het spelletje mario*/
+canvas{
+    width: 1280px;
+    height: 720px;
+    display: block;
+    position: absolute;
+    margin: auto;
+    /*    top: 0;*/
+    /*    bottom: 0;*/
+    right: 0;
+    left: 0;
+    border: 2px solid white;
+    /*background-color: black;*/
+    ;}
+
+#sky{
+    z-index: 1;
+}
+
+#bg{
+    z-index: 2;
+}
+
+#fg{
+    z-index: 3;
+}
