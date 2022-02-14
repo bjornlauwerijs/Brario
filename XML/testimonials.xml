@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TESTIMONIALS>
+    <TESTIMONIAL>
+        <NAME>Mario</NAME>
+        <COMMENT>Wake up, Luigi! The only time plumbers sleep on the job is when we're working by the hour.
+        </COMMENT>
+    </TESTIMONIAL>
+    <TESTIMONIAL>
+        <NAME>Luigi</NAME>
+        <COMMENT>Look at all that loot! Diamonds, gold, rubies! It must be worth over 100 bucks!</COMMENT>
+    </TESTIMONIAL> 
+    <TESTIMONIAL>
+        <NAME>Bowser</NAME>
+        <COMMENT>But... But I'm Bowser! I'm grade-A, 100% prime-cut final boss! I'm going to take over the world any day now! No way am I helping Mario! He's always trashing my awesome plans.</COMMENT>
+    </TESTIMONIAL>
+    <TESTIMONIAL>
+        <NAME>Princess Peach</NAME>
+        <COMMENT>Let's go bake that cake.</COMMENT>
+    </TESTIMONIAL>
+    <TESTIMONIAL>
+        <NAME>Mario</NAME>
+        <COMMENT>I wish Luigi were here, I could blame him!</COMMENT>
+    </TESTIMONIAL>
+    <TESTIMONIAL>
+        <NAME>Princess Zelda</NAME>
+        <COMMENT>Shadow and Light are two sides of the same coin...One cannot exist without the other.</COMMENT>
+    </TESTIMONIAL>
+    <TESTIMONIAL>
+        <NAME>Luigi</NAME>
+        <COMMENT>Mario, please! Don't say another word!</COMMENT>
+    </TESTIMONIAL>
+    <TESTIMONIAL>
+        <NAME>Mario</NAME>
+        <COMMENT>No woman can resist the charm of a Mario.</COMMENT>
+    </TESTIMONIAL>
+</TESTIMONIALS>

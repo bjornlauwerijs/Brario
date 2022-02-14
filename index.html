@@ -1,73 +1,302 @@
 <!doctype html>
 <html>
+
     <head>
         <title>Brario</title>
+        <link rel="shortcut icon" href="img/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="/img/favicon.png" />
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href ="/css/audio.css">
-        <!-- <script src="script.js"></script> -->
-        <script src="/js/audio.js"></script>
-
+        <script src="https://kit.fontawesome.com/63a755d106.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
 
     </head>
+
     <body>
-        <header>
-            <div id="container">
+        <div id="splashScreen">
+            <img src="img/marioBrightest.png" alt="Mario Brightest" />
+            <i class="fas fa-times" id="closeSplashscreen"></i>
+            <p><strong>Dear Nintendo</strong></p>
+            <p>This is purely for educational purpose, please do not sue my ass.</p>
+            <p>Sincerely,<br><strong>a fan</strong></p>
+
+            <div id="line"></div>
+
+        </div>
+        <div id="tempBlur">
+            <header>
                 <div id="topbar">
                     <p id="scroll-text">Brightest - Switch project - Bjorn Lauwerijs</p>
                 </div>
-
                 <div>
-                    <ul id="menu">
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="#theWhyWrapper">Why</a></li>
-                        <li><a href="#buy">Buy</a></li>
+                    <ul id="topMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="audioTopMenu"><a href="#theWhyWrapper">Why</a></li><li class="audioTopMenu"><a href="#screenshots">Screenshots</a></li>
+                        <li class="audioTopMenu"><a href="#blog">Blog</a></li>
+                        <li><a class="audioTopMenu" href="#testimonial">Testimonial</a></li>
                     </ul>
+                    <div id="hamburgerMenu" onclick="showHamburgerMenu()">
+                        <i class="fas fa-bars"></i>
+                        <ul id="hamburgerMenuList">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#theWhyWrapper">Why</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#testimonial">Testimonial</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="main">
+                    <img id="cloud1" src="img/cloud_1.svg" alt="Pixel Cloud">
+                    <img id="cloud2" src="img/cloud_2.svg" alt="Pixel Cloud">
+                </div>
+                <div id="logo">
+                    <img src="img/logo.svg" alt="Logo Brario">
+                </div>
+                <img id="brarioLand" src="img/brarioLand.png" alt="brarioland">
+            </header>
+            <div id="theWhyWrapper">
+                <div id="theWhy">
+                    <h1>Why Brario?</h1>
+                    <p>
+                        As a <strong>stereotypical child</strong> I was always fascinated by technology. Getting my first game console in 1999, the <strong><span id="kiwiGreen">kiwi green gameboy</span></strong>. Being useless on its own, my parents were also nice enough to supply me with my two first games, so I could actually use the thing. The first super mario and pokemon blue. They had some doubts on the pokemon game because of the difficulty, little did they know that in the next few years I was already doing the unlimited rare candy hack.
+                    </p>
+                    <br>
+                    <p>
+                        Fascinated by the idea that you can move a little pixelman along the screen with some buttons formed the foundation of my current interests.</p>
+                </div>
+                <img id="dino" src="img/dino.png" alt="Dode Dino" />
+            </div>
+            <div class="container" id="screenshots">
+                <div class="title">
+                    <h1>Sneak peak screenshots</h1>
+                    <p>So pixely</p>
                 </div>
 
-                <div id="main">
-                    <div class="clouds">
-                        <img id="cloud1" src="/img/cloud_1.svg" alt="Logo Brario">
+                <div id="wrapperScreenshots">
+                    <div class="screenshotBox">
+                        <div id="gradient">
+                            <img src="img/screenshot_1.png" alt="screenshot mario game" />
+                        </div>
+                        <p class="titleScreenshots">Screenshot 1</p>
+                    </div>
+                    <div class="screenshotBox">
+                        <div id="gradient">
+                            <img src="img/screenshot_2.png" alt="screenshot mario game" />
+                        </div>
+                        <p class="titleScreenshots">Screenshot 2</p>
+                    </div>
+                    <div class="screenshotBox">
+                        <div id="gradient">
+                            <img src="img/screenshot_3.png" alt="screenshot mario game" />
+                        </div>
+                        <p class="titleScreenshots">Screenshot 3</p>
+                    </div>
+                    <div class="screenshotBox">
+                        <div id="gradient">
+                            <img src="img/screenshot_4.png" alt="screenshot mario game" />
+                        </div>
+                        <p class="titleScreenshots">Screenshot 4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="releaseNotes">
+                <div class="title">
+                    <h1>Release Notes</h1>
+                    <p>Such content add, wow</p>
+                </div>
+                <div class="wrapper" id="wrapperReleaseNotes">
+                    <div>
+                        <ul class="tags"> 
+                            <li class="tag">HTML</li>
+                            <li class="tag">CSS</li>
+                            <li class="tag">Javascript</li>
+                            <li class="tag">XML</li>
+                        </ul>                  
+                        <ul class="meta">
+                            <li>Bjorn Lauwerijs</li>
+                            <li class="date"></li>
+                        </ul>
                     </div>
                     <div>
-                        <img id="logo" src="/img/logo.svg" alt="Logo Brario">
+                        <h2>0.9 Beta release notes</h2>
                     </div>
-                    <div class="clouds">
-                        <img id="cloud2" src="/img/cloud_2.svg" alt="Logo Brario">
+                    <div>
+                        <h3>New</h3>
+                        <ol>
+                            <li>Added temp splashscreen with blury background</li>
+                            <li>Added scroll animation at screenshots on mobile</li>
+                            <li>Added random number generator for likes on articles</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3>Bugfixes</h3>
+                        <ol>
+                            <li>Fixed error onclick at testimonials</li>
+                            <li>Screenshot display bug</li><li>Title margin</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3>To do</h3>
+                        <ol>
+                            <li>Bug on mobile with overflow</li>
+                            <li>Clean up code</li>
+                            <li>Loadingbar performance issues mobile</li>
+                            <li>Upload google bucket preview real world (mobile)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="blog">
+                <div class="title">
+                    <h1>My latest posts</h1>
+                    <p>The proces of creating this website</p>
+                </div>
+                <div class="wrapperArticles">
+                    <div class="articles">
+                        <div id="thumbnail"><img src="img/screenshot_1.png" alt="article image" />
+                        </div>
+                        <div class="square"></div>
+                        <ul>
+                            <li>Bjorn Lauwerijs</li>
+                            <li class="date"></li>
+                            <li>
+                                <input class="allHearts" type="image" src="img/heartEmpty.svg" alt="Like" title="Like" />
+
+                                <span class="outputLikes"></span>
+                            </li>
+                        </ul>
+                        <h2><a href="#">Stackoverflow on hotkey: check</a></h2>
+                        <p>Bij deze wil ik enkele mensen bedanken. Vriendin voor de morale support met zinnetjes zoals "amai ge zit nog niet zo heel ver precies" ... </p>
+                        <p class="leesMeer">
+                            <a href="#">Lees meer</a>
+                        </p>
+                    </div>
+                    <div class="articles">
+                        <div id="thumbnail"><img src="img/screenshot_2.png" alt="article image" /></div>
+                        <div class="square"></div>
+                        <ul>
+                            <li>Bjorn Lauwerijs</li>
+                            <li class="date"></li>
+                            <li>
+                                <input class="allHearts" type="image" src="img/heartEmpty.svg" alt="Like" title="Like" />
+                                <span class="outputLikes"></span>
+                            </li>
+                        </ul>
+                        <h2><a href="#">How about we div the divs so we can div that div. And place all that into the final div.</a></h2>
+                        <p>I div what I want.</p>
+                        <p class="leesMeer">
+                            <a href="#">Lees meer</a>
+                        </p>
+                    </div>
+                    <div class="articles">
+                        <div id="thumbnail"><img src="img/screenshot_3.png" alt="article image" /></div>
+                        <div class="square"></div>
+                        <ul>
+                            <li>Bjorn Lauwerijs</li>
+                            <li class="date"></li>
+                            <li>
+                                <input class="allHearts" type="image" src="img/heartEmpty.svg" alt="Like" title="Like" />
+                                <span class="outputLikes"></span>
+                            </li>
+                        </ul>
+                        <h2><a href="#">I used percentages, why  $@#à are you not responsive</a></h2>
+                        <p>Mobile plebs. </p>
+                        <p class="leesMeer">
+                            <a href="#">Lees meer</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="marioPeep">
+                <img src="img/marioBrightest.png" alt="Mario Brightest" />
+                <div id="marioSpeechBubble">
+                    <div class="anotation">
+                        <p>Wow, sloppy code dude.</p>
+                    </div>
+                    <div class="arrow">
                     </div>
                 </div>
 
-                <div id="playbutton">
-                    <button class="button" type="button"><a href="game.html">PLAY</a></button>
-                </div> 
-                <!--
-<div id="movingBombContainer">
-<img id="movingBomb" src="img/movingBomb.png"/>
-</div> 
--->                
-                    <img id="brarioLand" src="/img/brarioLand.svg" alt="brarioland">
             </div>
-        </header>
-        <div id="theWhyWrapper">
-            <div id="theWhy">
-                <h1>Why Brario?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula metus, tincidunt vitae felis vitae, pellentesque ultrices leo. In ac cursus lectus. Integer eu fringilla neque. Integer a vulputate nunc, sit amet sodales ex. Nullam sit amet massa tincidunt, laoreet justo ac, tempor felis. Vestibulum blandit ultrices faucibus. Nulla et consectetur leo.</p>
-            </div>
-            <img id="dino" src="/img/dino.png" alt="Dode Dino"/>
-        </div>
+            <div class="container" id="testimonial">
+                <div class="title">
+                    <h1>What people say...</h1>
+                    <p>Be amazed.</p>
+                </div>
 
-        <div id="buy">
-        </div>
-        <footer>
-            <div id="audioBottom">
-                <audio class="audio" controls preload loop autoplay >
-                    <source src="/music/FF.mp3" type="audio/mpeg">
-                    <source src="/music/HP.mp3" type="audio/mpeg">
-                </audio>
+                <div class="wrapperTestimonial">
+                    <div id="testimonialLeftSide">
+                        <h2>What do others say</h2>
+                        <p>Hier laad ik een naam en een comment in van een extern XML bestand. De code zorgt er ook voor dat men terug naar het begin springt wanneer we op het maximum aantal zitten dat in de XML zit.</p>
+                        <i id="testimonialClickLeft" class="fas fa-angle-left" onclick="y--, loadXMLDoc(y)"></i>
+                        <i id="testimonialClickRight" class="fas fa-angle-right" onclick="y++, loadXMLDoc(y)"></i>
+                    </div>
+                    <div id="testimonialRightSide">
+                        <h2 id="nameXML">Mario</h2>
+                        <p id="FeedbackXML">Wake up, Luigi! The only time plumbers sleep on the job is when we're working by the hour.</p>
+                    </div>
+                </div>
             </div>
-        </footer>
+            <div class="container" id="form">
+                <div class="title">
+                    <h1>Something you wanna say?</h1>
+                    <p>Amaze me.</p>
+                </div>
+                <div class="wrapperForm">
+                    <form id="feedbackForm" action="" name="form">
+                        <ul>
+                            <li>
+                                <label for="name" class="hideLabel">Name</label>
+                                <input id="name" name="name" placeholder="Full name" />
+                            </li>
+                            <li>
+                                <label for="feedback" class="hideLabel">Feedback</label>
+                                <textarea id="feedback" name="feedback" placeholder="Your feedback"></textarea>
+                            </li>
+
+                            <li>
+                                <button class="buttonForm" type="submit" value="Send" onclick="createAndDownloadXML()">Send</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <footer class="clearFix">
+                <div id="containerFooter">
+                    <div id="footerMenu">
+
+                        <a href="#"><img src="img/logo.svg" alt="Brario logo" /></a>
+
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="audioTopMenu"><a href="#theWhyWrapper">Why</a></li><li class="audioTopMenu"><a href="#screenshots">Screenshots</a></li>
+                            <li class="audioTopMenu"><a href="#blog">Blog</a></li>
+                            <li><a class="audioTopMenu" href="#testimonial">Testimonial</a></li>
+                        </ul>
+                        <p>Met plezier gemaakt voor het SwITch traject van Brightest</p>
+                        <hr>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+        <div id="goUp">
+            <a href="#topbar"><i class="fas fa-angle-up"></i></a>
+        </div>
+        <div id="musicAnotation">
+            <div id="pointer">
+                <p>Enjoy some <strong>nice</strong> jams</p>
+            </div>
+            <div class="arrowDown">
+            </div>
+        </div>
+        <div id="audioBottom">
+
+            <audio class="audio" controls preload loop>
+                <source src="music/FF.mp3" type="audio/mpeg">
+                <source src="music/HP.mp3" type="audio/mpeg">
+            </audio>
+        </div>
     </body>
 </html>
